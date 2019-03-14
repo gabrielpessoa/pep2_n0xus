@@ -18,3 +18,10 @@ conf-git-adriene:
 	@$(MAKE) separator
 	@$(MAKE) conf-ok
 	@$(MAKE) separator
+
+conf-git-guilhermegomes:
+	@git config user.email "gui.gcs13@gmail.com"
+	@git config user.name "guilhermegomes1"
+	@$(MAKE) separator
+	@$(MAKE) conf-ok
+	@$(MAKE) separator
