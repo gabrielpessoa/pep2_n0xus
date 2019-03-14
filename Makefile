@@ -25,3 +25,9 @@ conf-git-guilhermegomes:
 	@$(MAKE) separator
 	@$(MAKE) conf-ok
 	@$(MAKE) separator
+conf-git-arthur:
+	@git config user.email "arthur.alucard41@gmail.com"
+	@git config user.name "arthurviniciuse"
+	@$(MAKE) separator
+	@$(MAKE) conf-ok
+	@$(MAKE) separator
