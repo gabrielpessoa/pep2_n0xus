@@ -19,7 +19,7 @@ conf-git-adriene:
 	@$(MAKE) conf-ok
 	@$(MAKE) separator
 
-conf-git-guilhermegomes:
+conf-git-guilherme_gomes:
 	@git config user.email "gui.gcs13@gmail.com"
 	@git config user.name "guilhermegomes1"
 	@$(MAKE) separator
@@ -39,3 +39,10 @@ conf-git-luiz:
 	@$(MAKE) separator
 	@$(MAKE) conf-ok
 	@$(MAKE) separator
+
+conf-git-guilherme_evaristo:
+	@git config user.email "guilherme.evaristo.paz@gmail.com"
+	@git config user.name "GuilhermeEvaristo"
+	@$(MAKE) separator
+	@$(MAKE) conf-ok
+	@$(MAKE) separator	
