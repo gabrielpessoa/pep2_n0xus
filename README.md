@@ -4,4 +4,4 @@ Projeto da equipe N0xus, da disciplina de projeto e prática 2 (2019.1), referen
 
 ***
 
-Nesse sistema, o(a) funcionário(a) do estúdio de pilates terá a sua disposição um sistema informatizado de controle de organização dos exercícios e equipamentos através do grupo muscular.
+Nesse sistema, o(a) funcionário(a) do estúdio de pilates terá a sua disposição um sistema informatizado de controle de organização de exercícios, clientes e equipamentos.
