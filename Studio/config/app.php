@@ -2,9 +2,6 @@
 
 return [
 
-Way\Generators\GeneratorsServiceProvider::class,
-Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
-
     /*
     |--------------------------------------------------------------------------
     | Application Name
