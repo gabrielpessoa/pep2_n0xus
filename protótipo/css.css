@@ -1,0 +1,73 @@
+body{
+    background-color: #363636;
+  }
+    .login{
+      text-align: center;
+    }
+    .logo{
+      color: #E8E8E8;
+      font-size: 90px;
+    }
+    .login-user{
+      color: #E8E8E8;
+      font-size: 80px;
+    }
+    .cad-user{
+      color: #E8E8E8;
+      font-size: 80px;
+    }
+    .cad-email{
+      color: #E8E8E8;
+      font-size: 80px;
+    }
+    .login-password{
+      color: #E8E8E8;
+      font-size: 80px;
+    }
+    .cad-password{
+      color: #E8E8E8;
+      font-size: 80px;
+    }
+    .input-lg {
+      font-size: 40px;
+      width: 600px;
+      height: 60px;
+    }
+    .input-ps {
+      font-size: 40px;
+      width: 600px;
+      height: 60px;
+    }
+    .login2{
+      margin-top: 200px;
+    }
+    .but-ent {
+      font-style: oblique;
+      font-size: 38px;
+      color: #363636;
+      width: 200px;
+      height: 50px;
+      margin-top: 20px;
+      margin-left: 400px;
+      margin-right: -310px;  
+    }
+    .but-cad {
+      font-style: oblique;
+      font-size: 38px;
+      color: #363636;
+      width: 300px;
+      height: 50px;
+      margin-top: -30px;
+      margin-left: -300px;
+      margin-right: 300px;  
+    }
+    .but-con{
+      font-style: oblique;
+      font-size: 38px;
+      color: #363636;
+      width: 200px;
+      height: 50px;
+      margin-top: 20px;
+      margin-left: 400px;
+      margin-right: -8px;
+    }
