@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Gmuscular;
 class GmuscularController extends Controller
 {
     /**
@@ -11,9 +11,15 @@ class GmuscularController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function __construct()
     {
-        return view('gmuscular.index');
+        $this->middleware('auth');
+    }
+
+     public function index()
+    {
+        $gmusculares = Gmuscular::all();
+        return view('gmuscular.index', compact('gmusculares'));
     }
 
     /**
@@ -34,13 +40,14 @@ class GmuscularController extends Controller
      */
     public function store(Request $request)
     {
-         $request->validate([
+        //Verificando se os dados vieram
+        $request->validate([
             'nome' => 'required',
             'exercicio' => 'required',
         ]);
 
         Gmuscular::create($request->all());
-   
+        
         return redirect()->route('gmuscular.index')
                         ->with('success','Grupo criado com sucesso!');
     }
@@ -53,7 +60,8 @@ class GmuscularController extends Controller
      */
     public function show($id)
     {
-        return view('gmuscular.show');
+        $gmusculares = Gmuscular::find($id);
+        return view('gmuscular.show', compact('gmusculares'));
     }
 
     /**
@@ -64,7 +72,8 @@ class GmuscularController extends Controller
      */
     public function edit($id)
     {
-        return view('gmuscular.edit');
+        $gmusculares = Gmuscular::find($id);
+        return view('gmuscular.edit', compact('gmusculares'));
     }
 
     /**
@@ -81,6 +90,7 @@ class GmuscularController extends Controller
             'exercicio' => 'required',
         ]);
   
+        $gmuscular = Gmuscular::find($id);
         $gmuscular->update($request->all());
   
         return redirect()->route('gmuscular.index')
@@ -95,7 +105,9 @@ class GmuscularController extends Controller
      */
     public function destroy($id)
     {
-         return redirect()->route('gmuscular.index')
+        $delete = Gmuscular::find($id);
+        $delete->delete();
+        return redirect()->route('gmuscular.index')
                         ->with('success','Grupo muscular deletado com sucesso!');
     }
 }

@@ -14,19 +14,22 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
+            
             $table->increments('id');
             $table->string('name');
-	    $table->enum('tipo', ['aluno', 'gerente', 'instrutor'])->default('instrutor');
+	        $table->enum('tipo', ['aluno', 'gerente', 'instrutor'])->default('aluno');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+	        $table->string('endereco')->nullable();
+	        $table->string('telefone')->nullable();
+	        $table->string('queixa')->nullable();
+	        $table->string('patologia')->nullable();
+	        $table->string('cpf')->nullable();
+            //Especificos do laravel
             $table->rememberToken();
-	    $table->string('endereco');
-	    $table->string('telefone');
-	    $table->string('queixa');
-	    $table->string('patologia');
-	    $table->string('cpf');
             $table->timestamps();
+            
         });
     }
 
