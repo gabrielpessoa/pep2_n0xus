@@ -12,16 +12,15 @@ class CreateTurmasTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('turmas', function(Blueprint $table)
-		{
+		Schema::create('turmas', function(Blueprint $table){
+			
 			$table->increments('id');
 			$table->dateTime('horario');
-
-			$table->integer('gmuscular_id')->unsigned();
-			$table->foreign('gmuscular_id')->references('id')->on('gmuscular');
-                        $table->integer('users_id')->unsigned();
-			$table->foreign('users_id')->references('id')->on('users');
-                });
+            //User Foreign
+			$table->integer('user_id')->unsigned();
+			$table->foreign('user_id')->references('id')->on('users');
+		
+		});
  			
 	}
 
