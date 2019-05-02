@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('adminlte::page')
    
 @section('content')
     <div class="row">
@@ -23,7 +23,7 @@
         </div>
     @endif
   
-    <form action="{{ route('gmuscular.update',$gmuscular->id) }}" method="POST">
+    <form action="{{ route('gmuscular.update',$gmusculares->id) }}" method="POST">
         @csrf
         @method('PUT')
    
@@ -31,13 +31,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Nome:</strong>
-                    <input type="text" name="nome" value="{{ $gmuscular->nome }}" class="form-control" placeholder="Tríceps">
+                    <input type="text" name="nome" value="{{ $gmusculares->nome }}" class="form-control" placeholder="Tríceps">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Exercício:</strong>
-                    <textarea class="form-control" style="height:150px" name="exercicio" placeholder="Legging">{{ $gmuscular->exercicio }}</textarea>
+                    <textarea class="form-control" style="height:150px" name="exercicio" placeholder="Legging">{{ $gmusculares->exercicio }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">

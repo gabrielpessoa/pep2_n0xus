@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('adminlte::page')
   
 @section('content')
 <div class="row">
@@ -14,7 +14,7 @@
    
 @if ($errors->any())
     <div class="alert alert-danger">
-        <strong>Whoops!</strong> There were some problems with your input.<br><br>
+        <strong>Erro! </strong> Tem alguns problemas no seu input.<br><br>
         <ul>
             @foreach ($errors->all() as $error)
                 <li>{{ $error }}</li>
@@ -25,7 +25,6 @@
    
 <form action="{{ route('gmuscular.store') }}" method="POST">
     @csrf
-  
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
@@ -43,6 +42,5 @@
                 <button type="submit" class="btn btn-primary">Adicionar</button>
         </div>
     </div>
-   
 </form>
 @endsection
