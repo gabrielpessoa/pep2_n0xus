@@ -23,4 +23,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+//Rota para adicionar grupo muscular
 Route::resource('/gmuscular','GmuscularController');
