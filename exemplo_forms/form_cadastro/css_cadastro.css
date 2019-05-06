@@ -37,7 +37,7 @@ fieldset.grupo .campo {
 }
 
 .campo input[type="text"],
-.campo input[type="endereço"],
+.campo input[type="endereco"],
 .campo input[type="url"],
 .campo input[type="tel"],
 .campo select,
