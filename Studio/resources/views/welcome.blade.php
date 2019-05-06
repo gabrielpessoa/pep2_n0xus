@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Stud.io</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -18,6 +18,9 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                background-image: url('https://bodycontrology.com.au/wp-content/uploads/2016/09/pilates-background.png');
+                background-size: cover;
+                color: white;
             }
 
             .full-height {
@@ -49,7 +52,7 @@
             }
 
             .links > a {
-                color: #636b6f;
+                color: #fff;
                 padding: 0 25px;
                 font-size: 13px;
                 font-weight: 600;
@@ -81,7 +84,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Stud.io
                 </div>
 
                 <div class="links">
