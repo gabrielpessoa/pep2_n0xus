@@ -31,6 +31,7 @@
             }
 
             .flex-center {
+                background: rgba(0,0,0,0.4);
                 align-items: center;
                 display: flex;
                 justify-content: center;
@@ -88,6 +89,7 @@
             <div class="content">
                 <div class="title m-b-md">
                     STUD.IO
+                    <p style="font-size: 25px;">Automatizar agendamentos e prontuários para academias consutórios e Studios de Pilates.</p>
                 </div>
 
                 <div class="links">
