@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Gmuscular;
+use Illuminate\Support\Facades\Auth;
+
 class GmuscularController extends Controller
 {
     /**
@@ -14,6 +16,9 @@ class GmuscularController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        if(Auth::user()['tipo'] != 'aluno'){
+            return redirect('/gmuscular');
+        }
     }
 
      public function index()
