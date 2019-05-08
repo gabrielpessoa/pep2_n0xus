@@ -26,3 +26,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //Rota para adicionar grupo muscular
 Route::resource('/gmuscular','GmuscularController');
+
+//Rota para adicionar grupo turma
+Route::resource('turma', 'TurmaController');
