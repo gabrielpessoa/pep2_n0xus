@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-
+use Auth;
 class RegisterController extends Controller
 {
     /*
@@ -22,7 +22,7 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
-
+  
     /**
      * Where to redirect users after registration.
      *
@@ -37,7 +37,10 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('auth');
+        if(Auth::user()['tipo'] != 'gerente'){
+            return redirect('/');
+        }
     }
 
     /**
