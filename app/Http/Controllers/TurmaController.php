@@ -12,6 +12,15 @@ class TurmaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+        if(Auth::user()['tipo'] != 'aluno'){
+            return redirect('/turma');
+        }
+    }
+
     public function index()
     {
         return view('turma.index');
