@@ -89,7 +89,7 @@
             <div class="content">
                 <div class="title m-b-md">
                     STUD.IO
-                    <p style="font-size: 25px;">Automatizar agendamentos e prontuários para academias consutórios e Studios de Pilates.</p>
+                    <p style="font-size: 25px;">Automatizar agendamentos e prontuários para academias consultórios e studios de Pilates.</p>
                 </div>
 
                 <div class="links">
