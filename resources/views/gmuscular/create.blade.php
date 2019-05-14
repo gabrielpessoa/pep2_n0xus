@@ -35,8 +35,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Máquina:</strong>
-                <textarea class="form-control" style="height:150px" name="maquina"></textarea>
-            </div>
+                <input type="text" name="maquina" class="form-control"> </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn btn-primary">Adicionar</button>

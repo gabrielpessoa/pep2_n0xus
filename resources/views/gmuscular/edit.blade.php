@@ -31,13 +31,14 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Nome:</strong>
-                    <input type="text" name="nome" value="{{ $gmusculares->nome }}" class="form-control" placeholder="Tríceps">
+                    <input type="text" name="nome" value="{{ $gmusculares->nome }}" class="form-control">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Máquina:</strong>
-                    <textarea class="form-control" style="height:150px" name="maquina" ">{{ $gmusculares->maquina }}</textarea>
+                     <input type="text" name="maquina" value="{{ $gmusculares->maquina }}" class="form-control">
+             
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
