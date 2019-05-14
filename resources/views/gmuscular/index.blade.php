@@ -19,17 +19,17 @@
     <table class="table table-bordered">
         <tr>
             <th>Nome</th>
-            <th>Exercício</th>
+            <th>Máquina</th>
             <th width="280px">Action</th>
         </tr>
         @foreach ($gmusculares as $gmuscular)
         <tr>
             <td>{{ $gmuscular->nome }}</td>
-            <td>{{ $gmuscular->exercicio }}</td>
+            <td>{{ $gmuscular->maquina }}</td>
             <td>
                 <form action="{{ route('gmuscular.destroy',$gmuscular->id) }}" method="POST">
    
-                    <a class="btn btn-info" href="{{ route('gmuscular.show',$gmuscular->id) }}">Show</a>
+                    <a class="btn btn-info" href="{{ route('gmuscular.show',$gmuscular->id) }}">Visualizar</a>
     
                     <a class="btn btn-primary" href="{{ route('gmuscular.edit',$gmuscular->id) }}">Editar</a>
    
