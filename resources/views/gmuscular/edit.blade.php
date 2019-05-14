@@ -36,8 +36,8 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Exercício:</strong>
-                    <textarea class="form-control" style="height:150px" name="exercicio" placeholder="Legging">{{ $gmusculares->exercicio }}</textarea>
+                    <strong>Máquina:</strong>
+                    <textarea class="form-control" style="height:150px" name="maquina" ">{{ $gmusculares->maquina }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
