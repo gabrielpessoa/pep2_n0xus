@@ -16,7 +16,7 @@ class CreateGmuscularsTable extends Migration
         Schema::create('gmusculars', function (Blueprint $table) {
 			$table->increments('id');
 			$table->string('nome', 50)->nullable();
-            $table->string('exercicio', 150);
+            $table->string('maquina', 50)->nullable;
             $table->timestamps();
         });
     }
