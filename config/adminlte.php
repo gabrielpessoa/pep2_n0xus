@@ -120,16 +120,21 @@ return [
             'icon'        => 'home',
           
         ],
-        'ACCOUNT SETTINGS',
+        'CADASTROS',
         [
-            'text' => 'Profile',
-            'url'  => 'admin/settings',
-            'icon' => 'user',
+            'text' => 'Novo grupo muscular',
+            'url'  => 'gmuscular',
+            'icon' => 'building',
         ],
         [
-            'text' => 'Change Password',
-            'url'  => 'admin/settings',
-            'icon' => 'lock',
+            'text' => 'Nova turma',
+            'url'  => 'turma',
+            'icon' => 'list',
+        ],
+          [
+            'text' => 'Novo aluno(a)',
+            'url'  => 'register',
+            'icon' => 'user-plus',
         ],
     ],
 
