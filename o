@@ -1,0 +1,398 @@
+[33mcommit a31c8193c0f0e4212233fc50f176d0a64f90f697[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: arthurviniciuse <arthur.alucard41@gmail.com>
+Date:   Wed May 15 23:46:12 2019 -0300
+
+    #41 exportando as configurações de tradução da aplicação
+
+[1mdiff --git a/resources/lang/vendor/adminlte/ar/adminlte.php b/resources/lang/vendor/adminlte/ar/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a07e9cf[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/ar/adminlte.php[m
+[36m@@ -0,0 +1,21 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m[32m    'full_name'                   => 'الاسم الثلاثي',[m
+[32m+[m[32m    'email'                       => 'البريد الإلكتروني',[m
+[32m+[m[32m    'password'                    => 'كلمة السر',[m
+[32m+[m[32m    'retype_password'             => 'أعد إدخال كلمة السر',[m
+[32m+[m[32m    'remember_me'                 => 'ذكرني',[m
+[32m+[m[32m    'register'                    => 'تسجيل جديد',[m
+[32m+[m[32m    'register_a_new_membership'   => 'تسجيل عضوية جديدة',[m
+[32m+[m[32m    'i_forgot_my_password'        => 'نسيت كلمة السر؟',[m
+[32m+[m[32m    'i_already_have_a_membership' => 'هذا الحساب لديه عضوية سابقة',[m
+[32m+[m[32m    'sign_in'                     => 'تسجيل الدخول',[m
+[32m+[m[32m    'log_out'                     => 'تسجيل خروج',[m
+[32m+[m[32m    'toggle_navigation'           => 'القائمة الجانبية',[m
+[32m+[m[32m    'login_message'               => 'يجب تسجيل الدخول',[m
+[32m+[m[32m    'register_message'            => 'تم تسجيل العضوية الجديدة ',[m
+[32m+[m[32m    'password_reset_message'      => 'تم إعادة تعيين كلمة المرور',[m
+[32m+[m[32m    'reset_password'              => 'إعادة تعيين كلمة السر',[m
+[32m+[m[32m    'send_password_reset_link'    => 'إرسال رابط إعادة تعيين كلمة السر',[m
+[32m+[m[32m];[m
+[1mdiff --git a/resources/lang/vendor/adminlte/ca/adminlte.php b/resources/lang/vendor/adminlte/ca/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..af50d06[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/ca/adminlte.php[m
+[36m@@ -0,0 +1,21 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m[32m    'full_name'                   => 'Nom complet',[m
+[32m+[m[32m    'email'                       => 'Email',[m
+[32m+[m[32m    'password'                    => 'Contrasenya',[m
+[32m+[m[32m    'retype_password'             => 'Confirmar la contrasenya',[m
+[32m+[m[32m    'remember_me'                 => 'Recordar-me',[m
+[32m+[m[32m    'register'                    => 'Registrar-se',[m
+[32m+[m[32m    'register_a_new_membership'   => 'Crear un nou compte',[m
+[32m+[m[32m    'i_forgot_my_password'        => 'He oblidat la meva contrasenya',[m
+[32m+[m[32m    'i_already_have_a_membership' => 'Ja tinc un compte',[m
+[32m+[m[32m    'sign_in'                     => 'Accedir',[m
+[32m+[m[32m    'log_out'                     => 'Sortir',[m
+[32m+[m[32m    'toggle_navigation'           => 'Commutar la navegació',[m
+[32m+[m[32m    'login_message'               => 'Autenticar-se per a iniciar sessió',[m
+[32m+[m[32m    'register_message'            => 'Crear un nou compte',[m
+[32m+[m[32m    'password_reset_message'      => 'Restablir la contrasenya',[m
+[32m+[m[32m    'reset_password'              => 'Restablir la contrasenya',[m
+[32m+[m[32m    'send_password_reset_link'    => 'Enviar enllaç de restabliment de contrasenya',[m
+[32m+[m[32m];[m
+[1mdiff --git a/resources/lang/vendor/adminlte/de/adminlte.php b/resources/lang/vendor/adminlte/de/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8adebf9[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/de/adminlte.php[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m
+[32m+[m[32m    'full_name'                   => 'Vollständiger Name',[m
+[32m+[m[32m    'email'                       => 'E-Mail',[m
+[32m+[m[32m    'password'                    => 'Passwort',[m
+[32m+[m[32m    'retype_password'             => 'Passwort bestätigen',[m
+[32m+[m[32m    'remember_me'                 => 'Angemeldet bleiben',[m
+[32m+[m[32m    'register'                    => 'Registrieren',[m
+[32m+[m[32m    'register_a_new_membership'   => 'Ein neues Konto registrieren',[m
+[32m+[m[32m    'i_forgot_my_password'        => 'Ich habe mein Passwort vergessen',[m
+[32m+[m[32m    'i_already_have_a_membership' => 'Ich bin bereits registriert',[m
+[32m+[m[32m    'sign_in'                     => 'Anmelden',[m
+[32m+[m[32m    'log_out'                     => 'Abmelden',[m
+[32m+[m[32m    'toggle_navigation'           => 'Navigation umschalten',[m
+[32m+[m[32m    'login_message'               => 'Bitte melden Sie sich an, um auf den geschützten Bereich zuzugreifen',[m
+[32m+[m[32m    'register_message'            => 'Bitte füllen Sie das Formular aus, um ein neues Konto zu registrieren',[m
+[32m+[m[32m    'password_reset_message'      => 'Bitte geben Sie Ihre E-Mail Adresse ein, um Ihr Passwort zurückzusetzen',[m
+[32m+[m[32m    'reset_password'              => 'Passwort zurücksetzen',[m
+[32m+[m[32m    'send_password_reset_link'    => 'Link zur Passwortwiederherstellung senden',[m
+[32m+[m[32m];[m
+[1mdiff --git a/resources/lang/vendor/adminlte/en/adminlte.php b/resources/lang/vendor/adminlte/en/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6bcef12[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/en/adminlte.php[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m
+[32m+[m[32m    'full_name'                   => 'Full name',[m
+[32m+[m[32m    'email'                       => 'Email',[m
+[32m+[m[32m    'password'                    => 'Password',[m
+[32m+[m[32m    'retype_password'             => 'Retype password',[m
+[32m+[m[32m    'remember_me'                 => 'Remember Me',[m
+[32m+[m[32m    'register'                    => 'Register',[m
+[32m+[m[32m    'register_a_new_membership'   => 'Register a new membership',[m
+[32m+[m[32m    'i_forgot_my_password'        => 'I forgot my password',[m
+[32m+[m[32m    'i_already_have_a_membership' => 'I already have a membership',[m
+[32m+[m[32m    'sign_in'                     => 'Sign In',[m
+[32m+[m[32m    'log_out'                     => 'Log Out',[m
+[32m+[m[32m    'toggle_navigation'           => 'Toggle navigation',[m
+[32m+[m[32m    'login_message'               => 'Sign in to start your session',[m
+[32m+[m[32m    'register_message'            => 'Register a new membership',[m
+[32m+[m[32m    'password_reset_message'      => 'Reset Password',[m
+[32m+[m[32m    'reset_password'              => 'Reset Password',[m
+[32m+[m[32m    'send_password_reset_link'    => 'Send Password Reset Link',[m
+[32m+[m[32m];[m
+[1mdiff --git a/resources/lang/vendor/adminlte/es/adminlte.php b/resources/lang/vendor/adminlte/es/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..cbe3e2a[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/es/adminlte.php[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m
+[32m+[m[32m    'full_name'                   => 'Nombre completo',[m
+[32m+[m[32m    'email'                       => 'Email',[m
+[32m+[m[32m    'password'                    => 'Contraseña',[m
+[32m+[m[32m    'retype_password'             => 'Confirmar la contraseña',[m
+[32m+[m[32m    'remember_me'                 => 'Recordarme',[m
+[32m+[m[32m    'register'                    => 'Registrarse',[m
+[32m+[m[32m    'register_a_new_membership'   => 'Crear una nueva cuenta',[m
+[32m+[m[32m    'i_forgot_my_password'        => 'Olvidé mi contraseña',[m
+[32m+[m[32m    'i_already_have_a_membership' => 'Ya tengo una cuenta',[m
+[32m+[m[32m    'sign_in'                     => 'Acceder',[m
+[32m+[m[32m    'log_out'                     => 'Salir',[m
+[32m+[m[32m    'toggle_navigation'           => 'Navegación de palanca',[m
+[32m+[m[32m    'login_message'               => 'Autenticarse para iniciar sesión',[m
+[32m+[m[32m    'register_message'            => 'Crear una nueva cuenta',[m
+[32m+[m[32m    'password_reset_message'      => 'Restablecer la contraseña',[m
+[32m+[m[32m    'reset_password'              => 'Restablecer la contraseña',[m
+[32m+[m[32m    'send_password_reset_link'    => 'Enviar enlace de restablecimiento de contraseña',[m
+[32m+[m[32m];[m
+[1mdiff --git a/resources/lang/vendor/adminlte/fr/adminlte.php b/resources/lang/vendor/adminlte/fr/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..48da4a0[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/fr/adminlte.php[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m
+[32m+[m[32m    'full_name'                   => 'Nom',[m
+[32m+[m[32m    'email'                       => 'Email',[m
+[32m+[m[32m    'password'                    => 'Mot de passe',[m
+[32m+[m[32m    'retype_password'             => 'Entrez à nouveau le mot de passe',[m
+[32m+[m[32m    'remember_me'                 => 'Se souvenir de moi',[m
+[32m+[m[32m    'register'                    => 'Enregistrement',[m
+[32m+[m[32m    'register_a_new_membership'   => 'Enregistrer un nouveau membre',[m
+[32m+[m[32m    'i_forgot_my_password'        => 'J\'ai oublié mon mot de passe',[m
+[32m+[m[32m    'i_already_have_a_membership' => 'J\'ai déjà un compte',[m
+[32m+[m[32m    'sign_in'                     => 'Connexion',[m
+[32m+[m[32m    'log_out'                     => 'Déconnexion',[m
+[32m+[m[32m    'toggle_navigation'           => 'Basculer la navigation',[m
+[32m+[m[32m    'login_message'               => 'Connectez-vous pour commencer une session',[m
+[32m+[m[32m    'register_message'            => 'Enregistrement d\'un nouveau membre',[m
+[32m+[m[32m    'password_reset_message'      => 'Réinitialisation du mot de passe',[m
+[32m+[m[32m    'reset_password'              => 'Réinitialisation du mot de passe',[m
+[32m+[m[32m    'send_password_reset_link'    => 'Envoi de la réinitialisation du mot de passe',[m
+[32m+[m[32m];[m
+[1mdiff --git a/resources/lang/vendor/adminlte/hr/adminlte.php b/resources/lang/vendor/adminlte/hr/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..af9e362[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/hr/adminlte.php[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m
+[32m+[m[32m    'full_name'                   => 'Ime',[m
+[32m+[m[32m    'email'                       => 'Email',[m
+[32m+[m[32m    'password'                    => 'Lozinka',[m
+[32m+[m[32m    'retype_password'             => 'Ponovljena lozinka',[m
+[32m+[m[32m    'remember_me'                 => 'Zapamti me',[m
+[32m+[m[32m    'register'                    => 'Novi korisnik',[m
+[32m+[m[32m    'register_a_new_membership'   => 'Registracija',[m
+[32m+[m[32m    'i_forgot_my_password'        => 'Zaboravljena zaporka',[m
+[32m+[m[32m    'i_already_have_a_membership' => 'Već imam korisnički račun',[m
+[32m+[m[32m    'sign_in'                     => 'Prijava',[m
+[32m+[m[32m    'log_out'                     => 'Odjava',[m
+[32m+[m[32m    'toggle_navigation'           => 'Pregled navigacije',[m
+[32m+[m[32m    'login_message'               => 'Prijava',[m
+[32m+[m[32m    'register_message'            => 'Registracija',[m
+[32m+[m[32m    'password_reset_message'      => 'Nova lozinka',[m
+[32m+[m[32m    'reset_password'              => 'Nova lozinka',[m
+[32m+[m[32m    'send_password_reset_link'    => 'Pošalji novi zahtjev lozinke',[m
+[32m+[m[32m];[m
+[1mdiff --git a/resources/lang/vendor/adminlte/it/adminlte.php b/resources/lang/vendor/adminlte/it/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9ece419[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/it/adminlte.php[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m
+[32m+[m[32m    'full_name'                   => 'Nome completo',[m
+[32m+[m[32m    'email'                       => 'Email',[m
+[32m+[m[32m    'password'                    => 'Password',[m
+[32m+[m[32m    'retype_password'             => 'Ripeti password',[m
+[32m+[m[32m    'remember_me'                 => 'Ricordami',[m
+[32m+[m[32m    'register'                    => 'Registrazione',[m
+[32m+[m[32m    'register_a_new_membership'   => 'Registra un nuovo abbonamento',[m
+[32m+[m[32m    'i_forgot_my_password'        => 'Ho dimenticato la password',[m
+[32m+[m[32m    'i_already_have_a_membership' => 'Ho già un abbonamento',[m
+[32m+[m[32m    'sign_in'                     => 'Accedi',[m
+[32m+[m[32m    'log_out'                     => 'Logout',[m
+[32m+[m[32m    'toggle_navigation'           => 'Attiva la navigazione',[m
+[32m+[m[32m    'login_message'               => 'Accedi per iniziare la tua sessione',[m
+[32m+[m[32m    'register_message'            => 'Registra un nuovo abbonamento',[m
+[32m+[m[32m    'password_reset_message'      => 'Resetta la password',[m
+[32m+[m[32m    'reset_password'              => 'Resetta la password',[m
+[32m+[m[32m    'send_password_reset_link'    => 'Invia link di reset della password',[m
+[32m+[m[32m];[m
+[1mdiff --git a/resources/lang/vendor/adminlte/nl/adminlte.php b/resources/lang/vendor/adminlte/nl/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6d600b4[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/nl/adminlte.php[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m
+[32m+[m[32m    'full_name'                   => 'Volledige naam',[m
+[32m+[m[32m    'email'                       => 'E-mailadres',[m
+[32m+[m[32m    'password'                    => 'Wachtwoord',[m
+[32m+[m[32m    'retype_password'             => 'Wachtwoord nogmaals invoeren',[m
+[32m+[m[32m    'remember_me'                 => 'Ingelogd blijven',[m
+[32m+[m[32m    'register'                    => 'Registreren',[m
+[32m+[m[32m    'register_a_new_membership'   => 'Registreer een nieuw lidmaatschap',[m
+[32m+[m[32m    'i_forgot_my_password'        => 'Ik ben mijn wachtwoord vergeten',[m
+[32m+[m[32m    'i_already_have_a_membership' => 'Ik heb al een lidmaatschap',[m
+[32m+[m[32m    'sign_in'                     => 'Inloggen',[m
+[32m+[m[32m    'log_out'                     => 'Uitloggen',[m
+[32m+[m[32m    'toggle_navigation'           => 'Schakel navigatie',[m
+[32m+[m[32m    'login_message'               => 'Log in om je sessie te starten',[m
+[32m+[m[32m    'register_message'            => 'Registreer een nieuw lidmaatschap',[m
+[32m+[m[32m    'password_reset_message'      => 'Wachtwoord herstellen',[m
+[32m+[m[32m    'reset_password'              => 'Wachtwoord herstellen',[m
+[32m+[m[32m    'send_password_reset_link'    => 'Verzend link voor wachtwoordherstel',[m
+[32m+[m[32m];[m
+[1mdiff --git a/resources/lang/vendor/adminlte/pl/adminlte.php b/resources/lang/vendor/adminlte/pl/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..5a801f5[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/pl/adminlte.php[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m
+[32m+[m[32m    'full_name'                   => 'Imię i nazwisko',[m
+[32m+[m[32m    'email'                       => 'Email',[m
+[32m+[m[32m    'password'                    => 'Hasło',[m
+[32m+[m[32m    'retype_password'             => 'Powtórz hasło',[m
+[32m+[m[32m    'remember_me'                 => 'Zapamiętaj mnie',[m
+[32m+[m[32m    'register'                    => 'Zarejestruj',[m
+[32m+[m[32m    'register_a_new_membership'   => 'Załóż nowe konto',[m
+[32m+[m[32m    'i_forgot_my_password'        => 'Zapomniałem hasła',[m
+[32m+[m[32m    'i_already_have_a_membership' => 'Mam już konto',[m
+[32m+[m[32m    'sign_in'                     => 'Zaloguj',[m
+[32m+[m[32m    'log_out'                     => 'Wyloguj',[m
+[32m+[m[32m    'toggle_navigation'           => 'Przełącz nawigację',[m
+[32m+[m[32m    'login_message'               => 'Zaloguj się aby uzyskać dostęp do panelu',[m
+[32m+[m[32m    'register_message'            => 'Załóż nowe konto',[m
+[32m+[m[32m    'password_reset_message'      => 'Resetuj hasło',[m
+[32m+[m[32m    'reset_password'              => 'Resetuj hasło',[m
+[32m+[m[32m    'send_password_reset_link'    => 'Wyślij link do resetowania hasła',[m
+[32m+[m[32m];[m
+[1mdiff --git a/resources/lang/vendor/adminlte/pt-br/adminlte.php b/resources/lang/vendor/adminlte/pt-br/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..49989ed[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/pt-br/adminlte.php[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m
+[32m+[m[32m    'full_name'                   => 'Nome completo',[m
+[32m+[m[32m    'email'                       => 'Email',[m
+[32m+[m[32m    'password'                    => 'Senha',[m
+[32m+[m[32m    'retype_password'             => 'Repita a senha',[m
+[32m+[m[32m    'remember_me'                 => 'Lembrar-me',[m
+[32m+[m[32m    'register'                    => 'Registrar',[m
+[32m+[m[32m    'register_a_new_membership'   => 'Registrar um novo membro',[m
+[32m+[m[32m    'i_forgot_my_password'        => 'Esqueci minha senha',[m
+[32m+[m[32m    'i_already_have_a_membership' => 'Já sou um membro',[m
+[32m+[m[32m    'sign_in'                     => 'Entrar',[m
+[32m+[m[32m    'log_out'                     => 'Sair',[m
+[32m+[m[32m    'toggle_navigation'           => 'Trocar navegação',[m
+[32m+[m[32m    'login_message'               => 'Entre para iniciar uma nova sessão',[m
+[32m+[m[32m    'register_message'            => 'Registrar um novo membro',[m
+[32m+[m[32m    'password_reset_message'      => 'Recuperar senha',[m
+[32m+[m[32m    'reset_password'              => 'Recuperar senha',[m
+[32m+[m[32m    'send_password_reset_link'    => 'Enviar link de recuperação de senha',[m
+[32m+[m[32m];[m
+[1mdiff --git a/resources/lang/vendor/adminlte/ru/adminlte.php b/resources/lang/vendor/adminlte/ru/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6b2a587[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/ru/adminlte.php[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m
+[32m+[m[32m    'full_name'                   => 'Полное имя',[m
+[32m+[m[32m    'email'                       => 'Почта',[m
+[32m+[m[32m    'password'                    => 'Пароль',[m
+[32m+[m[32m    'retype_password'             => 'Подтверждение пароля',[m
+[32m+[m[32m    'remember_me'                 => 'Запомнить меня',[m
+[32m+[m[32m    'register'                    => 'Регистрация',[m
+[32m+[m[32m    'register_a_new_membership'   => 'Регистрация нового пользователя',[m
+[32m+[m[32m    'i_forgot_my_password'        => 'Восстановление пароля',[m
+[32m+[m[32m    'i_already_have_a_membership' => 'Я уже зарегистрирован',[m
+[32m+[m[32m    'sign_in'                     => 'Вход',[m
+[32m+[m[32m    'log_out'                     => 'Выход',[m
+[32m+[m[32m    'toggle_navigation'           => 'Переключить навигацию',[m
+[32m+[m[32m    'login_message'               => 'Вход в систему',[m
+[32m+[m[32m    'register_message'            => 'Регистрация нового пользователя',[m
+[32m+[m[32m    'password_reset_message'      => 'Восстановление пароля',[m
+[32m+[m[32m    'reset_password'              => 'Восстановление пароля',[m
+[32m+[m[32m    'send_password_reset_link'    => 'Отправить ссылку для восстановления пароля',[m
+[32m+[m
+[32m+[m[32m];[m
+[1mdiff --git a/resources/lang/vendor/adminlte/uk/adminlte.php b/resources/lang/vendor/adminlte/uk/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1b82749[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/uk/adminlte.php[m
+[36m@@ -0,0 +1,23 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m
+[32m+[m[32m    'full_name'                   => 'Повне і\'мя',[m
+[32m+[m[32m    'email'                       => 'Пошта',[m
+[32m+[m[32m    'password'                    => 'Пароль',[m
+[32m+[m[32m    'retype_password'             => 'Підтвердження пароля',[m
+[32m+[m[32m    'remember_me'                 => 'Запам\'ятати мене',[m
+[32m+[m[32m    'register'                    => 'Реєстрація',[m
+[32m+[m[32m    'register_a_new_membership'   => 'Реєстрація нового користувача',[m
+[32m+[m[32m    'i_forgot_my_password'        => 'Відновлення пароля',[m
+[32m+[m[32m    'i_already_have_a_membership' => 'Я вже зареєстрований',[m
+[32m+[m[32m    'sign_in'                     => 'Вхід',[m
+[32m+[m[32m    'log_out'                     => 'Вихід',[m
+[32m+[m[32m    'toggle_navigation'           => 'Переключити навігацію',[m
+[32m+[m[32m    'login_message'               => 'Вхід до системи',[m
+[32m+[m[32m    'register_message'            => 'Реєстрація нового користувача',[m
+[32m+[m[32m    'password_reset_message'      => 'Відновлення пароля',[m
+[32m+[m[32m    'reset_password'              => 'Відновлення пароля',[m
+[32m+[m[32m    'send_password_reset_link'    => 'Відправити посилання для відновлення пароля',[m
+[32m+[m
+[32m+[m[32m];[m
+[1mdiff --git a/resources/lang/vendor/adminlte/zh-CN/adminlte.php b/resources/lang/vendor/adminlte/zh-CN/adminlte.php[m
+[1mnew file mode 100644[m
+[1mindex 0000000..463ee35[m
+[1m--- /dev/null[m
+[1m+++ b/resources/lang/vendor/adminlte/zh-CN/adminlte.php[m
+[36m@@ -0,0 +1,22 @@[m
+[32m+[m[32m<?php[m
+[32m+[m
+[32m+[m[32mreturn [[m
+[32m+[m
+[32m+[m[32m    'full_name'                   => '姓名',[m
+[32m+[m[32m    'email'                       => '邮箱',[m
+[32m+[m[32m    'password'                    => '密码',[m
+[32m+[m[32m    'retype_password'             => '重输密码',[m
+[32m+[m[32m    'remember_me'                 => '记住我',[m
+[32m+[m[32m    'register'                    => '注册',[m
+[32m+[m[32m    'register_a_new_membership'   => '注册新用户',[m
+[32m+[m[32m    'i_forgot_my_password'        => '忘记密码',[m
+[32m+[m[32m    'i_already_have_a_membership' => '已经有账户',[m
+[32m+[m[32m    'sign_in'                     => '登录',[m
+[32m+[m[32m    'log_out'                     => '退出',[m
+[32m+[m[32m    'toggle_navigation'           => '切换导航',[m
+[32m+[m[32m    'login_message'               => '请先登录',[m
+[32m+[m[32m    'register_message'            => '注册新用户',[m
+[32m+[m[32m    'password_reset_message'      => '重置密码',[m
+[32m+[m[32m    'reset_password'              => '重置密码',[m
+[32m+[m[32m    'send_password_reset_link'    => '发送密码重置链接',[m
+[32m+[m[32m];[m

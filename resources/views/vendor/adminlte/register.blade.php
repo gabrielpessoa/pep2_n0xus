@@ -38,6 +38,73 @@
                         </span>
                     @endif
                 </div>
+                <div class="form-group has-feedback {{ $errors->has('tipo') ? 'has-error' : '' }}">
+                    <!-- <input type="tipo" name="tipo" class="form-control" value="{{ old('tipo') }}"
+                           placeholder="{{ 'Tipo'}}">
+                    <span class="glyphicon glyphicon-list-alt form-control-feedback"></span>
+                    @if ($errors->has('tipo'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('tipo') }}</strong>
+                        </span>
+                    @endif -->
+                    <select class="form-control" name="tipo">
+                        <option value="" disabled="">Escolha um tipo</option>
+                        <option value="" disabled>---</option>
+                        <option value="aluno">Aluno</option>
+                        <option value="gerente">Gerente</option>
+                        <option value="instrutor">Instrutor</option>
+                    </select>
+                </div>
+                <div class="form-group has-feedback {{ $errors->has('endereco') ? 'has-error' : '' }}">
+                    <input type="endereco" name="endereco" class="form-control" value="{{ old('endereco') }}"
+                           placeholder="{{ 'endereço'}}">
+                    <span class="glyphicon glyphicon-home form-control-feedback"></span>
+                    @if ($errors->has('endereco'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('endereco') }}</strong>
+                        </span>
+                    @endif
+                </div>
+                <div class="form-group has-feedback {{ $errors->has('telefone') ? 'has-error' : '' }}">
+                    <input type="telefone" name="telefone" class="form-control" value="{{ old('telefone') }}"
+                           placeholder="{{ 'telefone'}}">
+                    <span class="glyphicon glyphicon-earphone form-control-feedback"></span>
+                    @if ($errors->has('telefone'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('telefone') }}</strong>
+                        </span>
+                    @endif
+                </div>
+                <div class="form-group has-feedback {{ $errors->has('cpf') ? 'has-error' : '' }}">
+                    <input type="cpf" name="cpf" class="form-control" value="{{ old('cpf') }}"
+                           placeholder="{{ 'cpf'}}">
+                    <span class="glyphicon glyphicon-edit form-control-feedback"></span>
+                    @if ($errors->has('cpf'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('cpf') }}</strong>
+                        </span>
+                    @endif
+                </div>
+                <div class="form-group has-feedback {{ $errors->has('queixa') ? 'has-error' : '' }}">
+                    <input type="queixa" name="queixa" class="form-control" value="{{ old('queixa') }}"
+                           placeholder="{{ 'queixa'}}">
+                    <span class="glyphicon glyphicon-question-sign form-control-feedback"></span>
+                    @if ($errors->has('queixa'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('queixa') }}</strong>
+                        </span>
+                    @endif
+                </div>
+                <div class="form-group has-feedback {{ $errors->has('patologia') ? 'has-error' : '' }}">
+                    <input type="patologia" name="patologia" class="form-control" value="{{ old('patologia') }}"
+                           placeholder="{{ 'patologia'}}">
+                    <span class="glyphicon glyphicon-pushpin form-control-feedback"></span>
+                    @if ($errors->has('patologia'))
+                        <span class="help-block">
+                            <strong>{{ $errors->first('patologia') }}</strong>
+                        </span>
+                    @endif
+                </div>
                 <div class="form-group has-feedback {{ $errors->has('password') ? 'has-error' : '' }}">
                     <input type="password" name="password" class="form-control"
                            placeholder="{{ trans('adminlte::adminlte.password') }}">
