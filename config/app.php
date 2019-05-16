@@ -84,7 +84,7 @@ Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'pt-br',
 
     /*
     |--------------------------------------------------------------------------
@@ -97,7 +97,7 @@ Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'pt-br',
 
     /*
     |--------------------------------------------------------------------------
@@ -110,7 +110,7 @@ Xethron\MigrationsGenerator\MigrationsGeneratorServiceProvider::class,
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'pt-BR',
 
     /*
     |--------------------------------------------------------------------------
