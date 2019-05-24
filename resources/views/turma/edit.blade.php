@@ -7,7 +7,7 @@
                 <h2>Editar</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('gmuscular.index') }}"> Voltar</a>
+                <a class="btn btn-primary" href="{{ route('turma.index') }}"> Voltar</a>
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@
         </div>
     @endif
   
-    <form action="{{ route('gmuscular.update',$gmusculares->id) }}" method="POST">
+    <form action="{{ route('turma.update',$turmas->id) }}" method="POST">
         @csrf
         @method('PUT')
    
@@ -31,13 +31,14 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Nome:</strong>
-                    <input type="text" name="nome" value="{{ $gmusculares->nome }}" class="form-control" placeholder="Tríceps">
+                    <input type="text" name="nome" value="{{ $turmas->nome }}" class="form-control">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Horario:</strong>
-                    <textarea class="form-control" style="height:150px" name="exercicio" placeholder="Legging">{{ $gmusculares->exercicio }}</textarea>
+                    <strong>Horário:</strong>
+                     <input type="text" name="horario" value="{{ $turmas->horario }}" class="form-control">
+             
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
