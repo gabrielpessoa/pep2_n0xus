@@ -7,7 +7,7 @@
             <h2>Adicionar nova turma </h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('gmuscular.index') }}"> Voltar</a>
+            <a class="btn btn-primary" href="{{ route('turma.index') }}"> Voltar</a>
         </div>
     </div>
 </div>
@@ -28,19 +28,18 @@
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Nome:</strong>
-                <input type="text" name="nome" class="form-control" placeholder="Nome">
+                <strong>Nome*:</strong>
+                <input type="text" name="nome" class="form-control">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Horario:</strong>
-                <input type="time" class="form-control"  name="horario" placeholder="Horário">
-            </div>
+                <strong>Horário*:</strong>
+                <input type="text" name="horario" class="form-control"> </div>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-                <button type="submit" class="btn btn-primary">Adicionar</button>
         </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                <button type="submit" class="btn btn-primary">Adicionar</button> 
     </div>
 </form>
 @endsection
