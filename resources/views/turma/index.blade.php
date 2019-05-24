@@ -10,26 +10,29 @@
         </div>
     </div>
    
-    <!-- @if ($message = Session::get('success'))
+     @if ($message = Session::get('success'))
         <div class="alert alert-success">
             <p></p>
         </div>
-    @endif -->
+    @endif 
     <table class="table table-bordered">
         <tr>
             <th>Nome</th>
             <th>Horário</th>
             <th width="280px">Action</th>
         </tr>
+         @foreach ($turmas as $turma)
         <tr>
+          <td>{{ $turma->nome }}</td>
+            <td>{{ $turma->horario }}</td>
             <td></td>
             <td></td>
             <td>
-                <form action="" method="POST">
+                <form action="{{ route('turma.destroy',$turma->id) }}" method="POST">
    
-                    <a class="btn btn-info" href="">Visualizar</a>
+                    <a class="btn btn-info" href="{{ route('turma.show',$turma->id) }}">Visualizar</a>
     
-                    <a class="btn btn-primary" href="">Editar</a>
+                    <a class="btn btn-primary" href="{{ route('turma.edit',$turma->id) }}">Editar</a>
    
                     @csrf
                     @method('DELETE')
@@ -38,9 +41,10 @@
                 </form>
             </td>
         </tr>
+     @endforeach
     </table>
     <div class="pull-right">
-        <a class="btn btn-success" href="{{route('turma.create')}}"> Cadastre um nova turma</a>
+        <a class="btn btn-success" href="{{ route('turma.create') }}"> Cadastre uma nova turma</a>
     </div>
 </div>
 @endsection
