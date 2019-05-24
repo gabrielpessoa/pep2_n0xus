@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+            <div class="pull-left" >
                 <h2>Cadastro do grupo muscular</h2>
             </div>
         </div>
@@ -45,5 +45,5 @@
     <div class="pull-right">
         <a class="btn btn-success" href="{{ route('gmuscular.create') }}"> Cadastre um novo grupo muscular</a>
     </div>
-</div>
+</div> 
 @endsection
