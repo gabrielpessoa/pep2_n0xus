@@ -48,7 +48,7 @@ class GmuscularController extends Controller
         //Verificando se os dados vieram
         $request->validate([
             'nome' => 'required',
-            'maquina' => 'required',
+   
         ]);
 
         Gmuscular::create($request->all());
@@ -92,7 +92,7 @@ class GmuscularController extends Controller
     {
          $request->validate([
             'nome' => 'required',
-            'maquina' => 'required',
+        
         ]);
   
         $gmuscular = Gmuscular::find($id);
