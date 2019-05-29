@@ -23,7 +23,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route  resource('/equipamento', 'EquipamentoController');
+Route::resource('/equipamento', 'EquipamentoController');
 
 //Rota para adicionar grupo muscular
 Route::resource('/gmuscular','GmuscularController');
