@@ -34,14 +34,7 @@
                     <input type="text" name="nome" value="{{ $gmusculares->nome }}" class="form-control">
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
-                    <strong>Máquina:</strong>
-                     <input type="text" name="maquina" value="{{ $gmusculares->maquina }}" class="form-control">
-             
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
         </div>
