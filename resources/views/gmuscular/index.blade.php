@@ -20,7 +20,7 @@
         <tr>
             <th>Nome</th>
             <th>Máquina</th>
-            <th width="280px">Action</th>
+            
         </tr>
         @foreach ($gmusculares as $gmuscular)
         <tr>
@@ -29,7 +29,7 @@
             <td>
                 <form action="{{ route('gmuscular.destroy',$gmuscular->id) }}" method="POST">
    
-                    <a class="btn btn-info" href="{{ route('gmuscular.show',$gmuscular->id) }}">Visualizar</a>
+                    <a class="btn btn-success" href="{{ route('gmuscular.show',$gmuscular->id) }}">Visualizar</a>
     
                     <a class="btn btn-primary" href="{{ route('gmuscular.edit',$gmuscular->id) }}">Editar</a>
    
@@ -42,8 +42,8 @@
         </tr>
         @endforeach
     </table>
-    <div class="pull-right">
-        <a class="btn btn-success" href="{{ route('gmuscular.create') }}"> Cadastre um novo grupo muscular</a>
+    <div class="">
+        <a class="btn btn-primary" href="{{ route('gmuscular.create') }}"> Cadastre um novo grupo muscular</a>
     </div>
 </div> 
 @endsection
