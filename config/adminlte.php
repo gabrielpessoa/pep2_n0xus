@@ -126,6 +126,11 @@ return [
             'url'  => 'gmuscular',
             'icon' => 'building',
         ],
+         [
+            'text' => 'Novo equipamento',
+            'url'  => 'equipamento',
+            'icon' => 'gavel',
+        ],
         [
             'text' => 'Nova turma',
             'url'  => 'turma',
