@@ -21,11 +21,14 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('data_nascimento')->nullable();
 	        $table->string('endereco')->nullable();
 	        $table->string('telefone')->nullable();
+            $table->string('profissao')->nullable();
 	        $table->string('queixa')->nullable();
 	        $table->string('patologia')->nullable();
 	        $table->string('cpf')->nullable();
+            $table->string('data_pagamento')->nullable();
             //Especificos do laravel
             $table->rememberToken();
             $table->timestamps();
