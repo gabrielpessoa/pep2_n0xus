@@ -30,3 +30,5 @@ Route::resource('/gmuscular','GmuscularController');
 
 //Rota para adicionar grupo turma
 Route::resource('/turma', 'TurmaController');
+
+Route::resource('/aluno', 'AlunoController');
