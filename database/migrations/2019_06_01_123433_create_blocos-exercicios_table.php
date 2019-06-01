@@ -13,10 +13,10 @@ class CreateBlocosExerciciosTable extends Migration
      */
     public function up()
     {
-        Schema:create('blocos-exercicios', function (Blueprint $table){
+        Schema::create('blocos-exercicios', function (Blueprint $table){
             $table->increments('id');
             $table->string('nome');
-        };
+        });
     }
 
     /**
@@ -26,6 +26,6 @@ class CreateBlocosExerciciosTable extends Migration
      */
     public function down()
     {
-        Schema:dropIfExists('blocos-exercicios');
+        Schema::dropIfExists('blocos-exercicios');
     }
 }
