@@ -15,8 +15,7 @@ class CreateSemanasTable extends Migration
     {
         Schema::create('semanas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('semana');
-            $table->string('exercicio');
+            $table->string('n_semana');
             $table->timestamps();
         });
     }
