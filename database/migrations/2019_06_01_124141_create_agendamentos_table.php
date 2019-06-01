@@ -15,13 +15,13 @@ class CreateAgendamentosTable extends Migration
     {
         Schema::create('agendamentos', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('semana_id');
-            $table->integer('bloco-exercio_id');
-            $table->integer('gmuscular_id');
-            $table->integer('equipamento_id');
+            $table->integer('semana_id')->unsigned();
+            $table->integer('bloco_exercicio_id')->unsigned();
+            $table->integer('gmuscular_id')->unsigned();
+            $table->integer('equipamento_id')->unsigned();
 
             $table->foreign('semana_id')->references('id')->on('semanas');
-            $table->foreign('bloco-exercicio_id')->references('id')->on('blocos-exercicios');
+            $table->foreign('bloco_exercicio_id')->references('id')->on('blocos-exercicios');
             $table->foreign('gmuscular_id')->references('id')->on('gmusculars');
             $table->foreign('equipamento_id')->references('id')->on('equipamentos');
             
