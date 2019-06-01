@@ -27,7 +27,6 @@ class CreateUsersTable extends Migration
             $table->string('profissao')->nullable();
 	        $table->string('queixa')->nullable();
 	        $table->string('patologia')->nullable();
-	        $table->string('cpf')->nullable();
             $table->string('data_pagamento')->nullable();
             //Especificos do laravel
             $table->rememberToken();
