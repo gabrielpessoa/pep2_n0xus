@@ -26,15 +26,13 @@
             <td>{{ $equipamento->equipamento }}</td>
                      <td>
                 <form action="{{ route('equipamento.destroy',$equipamento->id) }}" method="POST">
-   
-                    <a class="btn btn-success" href="{{ route('equipamento.show',$equipamento->id) }}">Visualizar</a>
     
                     <a class="btn btn-primary" href="{{ route('equipamento.edit',$equipamento->id) }}">Editar</a>
    
                     @csrf
                     @method('DELETE')
       
-                    <button type="submit" class="btn btn-danger">Deletar</button>
+                    <button type="submit" class="btn btn-danger">Excluir</button>
                 </form>
             </td>
         </tr>
