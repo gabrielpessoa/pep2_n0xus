@@ -114,6 +114,6 @@ class TurmaController extends Controller
           $delete = Turma::find($id);
         $delete->delete();
         return redirect()->route('turma.index')
-                        ->with('success','Turma deletada com sucesso!');
+                        ->with('success','Turma removida com sucesso!');
     }
 }
