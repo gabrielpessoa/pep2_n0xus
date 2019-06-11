@@ -26,15 +26,13 @@
             <td>{{ $gmuscular->nome }}</td>
                      <td>
                 <form action="{{ route('gmuscular.destroy',$gmuscular->id) }}" method="POST">
-   
-                    <a class="btn btn-success" href="{{ route('gmuscular.show',$gmuscular->id) }}">Visualizar</a>
     
                     <a class="btn btn-primary" href="{{ route('gmuscular.edit',$gmuscular->id) }}">Editar</a>
    
                     @csrf
                     @method('DELETE')
       
-                    <button type="submit" class="btn btn-danger">Deletar</button>
+                    <button type="submit" class="btn btn-danger">Excluir</button>
                 </form>
             </td>
         </tr>
