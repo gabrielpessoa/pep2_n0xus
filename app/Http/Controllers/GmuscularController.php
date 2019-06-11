@@ -113,6 +113,6 @@ class GmuscularController extends Controller
         $delete = Gmuscular::find($id);
         $delete->delete();
         return redirect()->route('gmuscular.index')
-                        ->with('success','Grupo muscular deletado com sucesso!');
+                        ->with('success','Grupo muscular removido com sucesso!');
     }
 }
