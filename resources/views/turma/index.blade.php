@@ -29,15 +29,13 @@
             <td></td>
             <td>
                 <form action="{{ route('turma.destroy',$turma->id) }}" method="POST">
-   
-                    <a class="btn btn-success" href="{{ route('turma.show',$turma->id) }}">Visualizar</a>
     
                     <a class="btn btn-primary" href="{{ route('turma.edit',$turma->id) }}">Editar</a>
    
                     @csrf
                     @method('DELETE')
       
-                    <button type="submit" class="btn btn-danger">Deletar</button>
+                    <button type="submit" class="btn btn-danger">Excluir</button>
                 </form>
             </td>
         </tr>

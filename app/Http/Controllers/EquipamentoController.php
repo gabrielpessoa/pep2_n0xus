@@ -113,6 +113,6 @@ class EquipamentoController extends Controller
         $delete = Equipamento::find($id);
         $delete->delete();
         return redirect()->route('equipamento.index')
-                        ->with('success','Equipamento deletado com sucesso!');
+                        ->with('success','Equipamento removido com sucesso!');
     }
 }
