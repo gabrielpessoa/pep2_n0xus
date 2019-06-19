@@ -30,12 +30,18 @@
         
         @foreach ($users as $user)
         <tr>
-            <td>{{ $user->user }}</td>
+            <td>{{ $user->name }}</td>
+            <td>{{ $user->data_nascimento }}</td>
+            <td>{{ $user->endereco }}</td>
+            <td>{{ $user->telefone }}</td>
+            <td>{{ $user->profissao }}</td>
+            <td>{{ $user->queixa }}</td>
+            <td>{{ $user->patologia }}</td>
+            <td>{{ $user->data_pagamento }}</td>
+
                      <td>
                 <form action="{{ route('user.destroy',$user->id) }}" method="POST">
    
-                    <a class="btn btn-success" href="{{ route('user.show',$user->id) }}">Visualizar</a>
-    
                     <a class="btn btn-primary" href="{{ route('user.edit',$user->id) }}">Editar</a>
    
                     @csrf
