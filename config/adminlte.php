@@ -138,7 +138,7 @@ return [
         ],
           [
             'text' => 'Novo aluno(a)',
-            'url'  => 'register',
+            'url'  => 'user',
             'icon' => 'user-plus',
         ],
     ],
