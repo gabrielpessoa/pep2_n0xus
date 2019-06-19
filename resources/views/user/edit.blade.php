@@ -31,31 +31,37 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Aluno*:</strong>
-                    <input type="text" name="name" value="{{ $users->user }}" class="form-control">
+                    <input type="text" name="name" value="{{ $users->name }}" class="form-control">
                 </div>
+              
                 <div class="form-group">
                     <strong>Data de nascimento*:</strong>
-                    <input type="text" name="'data_nascimento'" value="{{ $users->user }}" class="form-control">
+                    <input type="date" name="'data_nascimento'" value="{{ $users->data_nascimento }}" class="form-control">
                 </div>
                 <div class="form-group">
                     <strong>Endereço*:</strong>
-                    <input type="text" name="endereco" value="{{ $users->user }}" class="form-control">
+                    <input type="text" name="endereco" value="{{ $users->endereco }}" class="form-control">
                 </div>
+                 <div class="form-group">
+                    <strong>Telefone*:</strong>
+                    <input type="text" name="telefone" value="{{ $users->telefone }}" class="form-control">
+                </div>
+
                 <div class="form-group">
                     <strong>Profissão*:</strong>
-                    <input type="text" name="profissao" value="{{ $users->user }}" class="form-control">
+                    <input type="text" name="profissao" value="{{ $users->profissao }}" class="form-control">
                 </div>
                 <div class="form-group">
                     <strong>Queixa*:</strong>
-                    <input type="text" name="queixa" value="{{ $users->user }}" class="form-control">
+                    <input type="text" name="queixa" value="{{ $users->queixa }}" class="form-control">
                 </div>
                 <div class="form-group">
                     <strong>Patologia*:</strong>
-                    <input type="text" name="patologia" value="{{ $users->user }}" class="form-control">
+                    <input type="text" name="patologia" value="{{ $users->patologia }}" class="form-control">
                 </div>
                 <div class="form-group">
-                    <strong>data de pagamento*:</strong>
-                    <input type="text" name="data_pagamento" value="{{ $users->user }}" class="form-control">
+                    <strong>Data de pagamento*:</strong>
+                    <input type="date" name="data_pagamento" value="{{ $users->data_pagamento }}" class="form-control">
                 </div>
             </div>
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
