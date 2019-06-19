@@ -92,18 +92,7 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'name' => 'required',
-            'data_nascimento' => 'required',
-            'endereco' => 'required',
-            'telefone' => 'required',
-            'profissao' => 'required',
-            'queixa' => 'required',
-            'patologia' => 'required',
-            'data_pagamento' => 'required',
-        
-        ]);
-  
+      
         $user = User::find($id);
         $user->update($request->all());
   
