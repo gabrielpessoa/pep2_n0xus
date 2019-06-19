@@ -18,7 +18,7 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
 	        $table->enum('tipo', ['aluno', 'gerente', 'instrutor'])->default('aluno');
-            $table->string('email')->unique();
+            $table->string('email')->unique()->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('data_nascimento')->nullable();
