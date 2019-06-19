@@ -37,7 +37,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Horário:</strong>
-                     <input type="text" name="horario" value="{{ $turmas->horario }}" class="form-control">
+                     <input type="time" name="horario" value="{{ $turmas->horario }}" class="form-control">
              
                 </div>
             </div>
