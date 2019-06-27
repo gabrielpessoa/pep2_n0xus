@@ -116,7 +116,7 @@ return [
         ], */
         [
             'text'        => 'Menu',
-            'url'         => 'home',
+            'url'         => 'home/create',
             'icon'        => 'home',
           
         ],

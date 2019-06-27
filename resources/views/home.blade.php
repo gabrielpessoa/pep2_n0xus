@@ -3,31 +3,55 @@
 @section('title', 'STUDIO')
 
 @section('content')
+<table>
 <form>
-<div class="form-group">
-    <label for="exampleFormControlSelect1">Dia da Semana</label>
+
+  <tr>
+    <td>
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Bloco de Exercício</label> <br>
+      <input type="name" name="bloco" placeholder="Bloco 1">
+    
+  </div>
+</td>
+  <td>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Grupo muscular</label>
     <select class="form-control" id="exampleFormControlSelect1">
-      <option>Segunda</option>
-      <option>Terça-Feira</option>
-      <option>Quarta-Feira</option>
-      <option>Quinta-Feira</option>
-      <option>Sexta-Feira</option>
+      @foreach ($gmusculares as $gmuscular)
+      <option value="{{$gmuscular-> id}}">{{$gmuscular->nome}}</option>
+      @endforeach
     </select>
   </div>
+</td>
+<td>
   <div class="form-group">
-    <label for="exampleFormControlSelect1">Selecionar Turma</label>
+    <label for="exampleFormControlSelect1">Equipamento</label>
     <select class="form-control" id="exampleFormControlSelect1">
-      <option>Turma 1</option>
-      <option>Turma 2</option>
-      <option>Turma 3</option>
-      <option>Turma 4</option>
-      <option>Turma 5</option>
+      @foreach ($equipamentos as $equipamento)
+      <option value="{{$equipamento-> id}}">{{$equipamento->equipamento}}</option>
+      @endforeach
     </select>
   </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Horário</label>
-    <input type="time" class="form-control" id="exampleFormControlInput1">
+   </td>
+  
+ 
+</form>
+
+</tr>
+</table> 
+<table>
+<form>
+
+  <tr>
+    <td>
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Bloco de Exercício</label> <br>
+      <input type="name" name="bloco" placeholder="Bloco 2">
+    
   </div>
+</td>
+  <td>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Grupo muscular</label>
     <select class="form-control" id="exampleFormControlSelect1">
@@ -38,6 +62,8 @@
       <option>Grupo muscular 5</option>
     </select>
   </div>
+</td>
+<td>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Equipamento</label>
     <select class="form-control" id="exampleFormControlSelect1">
@@ -48,10 +74,97 @@
       <option>Equipamento 5</option>
     </select>
   </div>
-  <div class="form-group">
-    <button>Agendar</button>
-  </div>
+   </td>
   
+ 
 </form>
+
+</tr>
+</table> 
+<table>
+<form>
+
+  <tr>
+    <td>
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Bloco de Exercício</label> <br>
+      <input type="name" name="bloco" placeholder="Bloco 3">
     
+  </div>
+</td>
+  <td>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Grupo muscular</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Grupo muscular 1</option>
+      <option>Grupo muscular 2</option>
+      <option>Grupo muscular 3</option>
+      <option>Grupo muscular 4</option>
+      <option>Grupo muscular 5</option>
+    </select>
+  </div>
+</td>
+<td>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Equipamento</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Equipamento 1</option>
+      <option>Equipamento 2</option>
+      <option>Equipamento 3</option>
+      <option>Equipamento 4</option>
+      <option>Equipamento 5</option>
+    </select>
+  </div>
+   </td>
+  
+ 
+</form>
+
+</tr>
+</table> 
+<table>
+<form>
+
+  <tr>
+    <td>
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Bloco de Exercício</label> <br>
+      <input type="name" name="bloco" placeholder="Bloco 4">
+    
+  </div>
+</td>
+  <td>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Grupo muscular</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Grupo muscular 1</option>
+      <option>Grupo muscular 2</option>
+      <option>Grupo muscular 3</option>
+      <option>Grupo muscular 4</option>
+      <option>Grupo muscular 5</option>
+    </select>
+  </div>
+</td>
+<td>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Equipamento</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Equipamento 1</option>
+      <option>Equipamento 2</option>
+      <option>Equipamento 3</option>
+      <option>Equipamento 4</option>
+      <option>Equipamento 5</option>
+    </select>
+  </div>
+   </td>
+  
+ 
+</form>
+
+</tr>
+</table> 
+
+<div class="form-group">
+    <button>Agendar</button>
+  </div> 
 @stop
