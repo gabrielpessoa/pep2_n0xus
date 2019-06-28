@@ -22,19 +22,19 @@ class DatabaseSeeder extends Seeder
             'remember_token' => 1
         ]);
 	
-	 DB::table('blocos_exercicios')->insert([
+	 DB::table('bloco_exercicios')->insert([
             'nome' => 'Alongamento',
        
         ]);
-	 DB::table('blocos_exercicios')->insert([
+	 DB::table('bloco_exercicios')->insert([
             'nome' => 'Tronco',
        
         ]);
-	 DB::table('blocos_exercicios')->insert([
+	 DB::table('bloco_exercicios')->insert([
             'nome' => 'MMII',
        
         ]);
-	 DB::table('blocos_exercicios')->insert([
+	 DB::table('bloco_exercicios')->insert([
             'nome' => 'MMSS',
        
         ]);

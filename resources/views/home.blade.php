@@ -10,7 +10,9 @@
     <td>
     <div class="form-group">
     <label for="exampleFormControlSelect1">Bloco de Exercício</label> <br>
-      <input type="name" name="bloco" placeholder="Bloco 1">
+      @foreach ($blocos as $bloco)
+      <input type="name" name="bloco" value="{{$bloco->id">{{$bloco->nome}}
+      @endforeach
     
   </div>
 </td>

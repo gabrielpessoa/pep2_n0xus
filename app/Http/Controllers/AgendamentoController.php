@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Equipamento;
 use App\Gmuscular;
+use App\BlocoExercicio;
 
 class AgendamentoController extends Controller
 {
@@ -27,7 +28,8 @@ class AgendamentoController extends Controller
     {
         $equipamentos = Equipamento::all();
         $gmusculares = Gmuscular::all();
-        return view('home', compact('equipamentos', 'gmusculares'));
+        $blocos = BlocoExercicio::all();
+        return view('home', compact('equipamentos', 'gmusculares', 'blocos'));
 
     }
 
