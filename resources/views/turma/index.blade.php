@@ -11,8 +11,9 @@
     </div>
    
      @if ($message = Session::get('success'))
-        <div class="alert alert-success">
+        <div class="col-lg-6"><div class="alert alert-success">
             <p>{{$message}}</p>
+        </div>
         </div>
     @endif 
     <table class="table table-bordered">
