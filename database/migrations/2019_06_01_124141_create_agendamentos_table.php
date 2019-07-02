@@ -24,7 +24,7 @@ class CreateAgendamentosTable extends Migration
             $table->foreign('bloco_exercicio_id')->references('id')->on('bloco_exercicios');
             $table->foreign('gmuscular_id')->references('id')->on('gmusculars');
             $table->foreign('equipamento_id')->references('id')->on('equipamentos');
-            
+
             $table->timestamps();
         });
     }

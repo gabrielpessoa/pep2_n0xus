@@ -14,7 +14,7 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            
+
             $table->increments('id');
             $table->string('name');
 	        $table->enum('tipo', ['aluno', 'gerente', 'instrutor'])->default('aluno');
@@ -31,7 +31,9 @@ class CreateUsersTable extends Migration
             //Especificos do laravel
             $table->rememberToken();
             $table->timestamps();
-            
+
+
+
         });
     }
 

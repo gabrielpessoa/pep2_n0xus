@@ -70,13 +70,13 @@
             }
         </style>
     </head>
-    
+
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home/create') }}">Home</a>
+                        <a href="{{ route('home.create') }}">Home</a>
                     @else
                         <a href="{{ route('login') }}">Entrar</a>
                     @endauth

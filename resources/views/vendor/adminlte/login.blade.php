@@ -1,4 +1,4 @@
-@extends('adminlte::master')
+@extends('adminlte::master')/
 
 @section('adminlte_css')
     <link rel="stylesheet" href="{{ asset('vendor/adminlte/plugins/iCheck/square/blue.css') }}">
@@ -56,7 +56,7 @@
                     <!-- /.col -->
                 </div>
             </form>
-            
+
         </div>
         <!-- /.login-box-body -->
     </div><!-- /.login-box -->
@@ -73,9 +73,9 @@
             });
         });
     </script>
-    
+
     @yield('js')
 
-    
+
 @stop
 

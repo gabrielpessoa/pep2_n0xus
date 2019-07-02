@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Equipamento;
 use App\Gmuscular;
+use App\Agendamento;
+use App\Semana;
 use App\BlocoExercicio;
 
 class AgendamentoController extends Controller
@@ -16,7 +18,7 @@ class AgendamentoController extends Controller
      */
     public function index()
     {
-        //
+        return redirect('/home/create');
     }
 
     /**
@@ -30,7 +32,6 @@ class AgendamentoController extends Controller
         $gmusculares = Gmuscular::all();
         $blocos = BlocoExercicio::all();
         return view('home', compact('equipamentos', 'gmusculares', 'blocos'));
-
     }
 
     /**
@@ -41,7 +42,45 @@ class AgendamentoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $semana = new Semana;
+        $semana->n_semana = $request->data;
+        $semana->save();
+
+        $semanas = Semana::all();
+        foreach ($semanas as $key => $value) {
+            if($value->n_semana == $request->data){
+                $data = $value->id;
+            }
+        }
+
+             $agendamento = new Agendamento;
+             $agendamento->semana_id = $data;
+             $agendamento->bloco_exercicio_id = $request->bloco1;
+             $agendamento->equipamento_id = $request->equipamento1;
+             $agendamento->gmuscular_id = $request->gmuscular1;
+             $agendamento->save();
+
+             $agendamento = new Agendamento;
+             $agendamento->semana_id = $data;
+             $agendamento->bloco_exercicio_id = $request->bloco2;
+             $agendamento->equipamento_id = $request->equipamento2;
+             $agendamento->gmuscular_id = $request->gmuscular2;
+             $agendamento->save();
+
+             $agendamento = new Agendamento;
+             $agendamento->semana_id = $data;
+             $agendamento->bloco_exercicio_id = $request->bloco3;
+             $agendamento->equipamento_id = $request->equipamento3;
+             $agendamento->gmuscular_id = $request->gmuscular3;
+             $agendamento->save();
+
+             $agendamento = new Agendamento;
+             $agendamento->semana_id = $data;
+             $agendamento->bloco_exercicio_id = $request->bloco4;
+             $agendamento->equipamento_id = $request->equipamento4;
+             $agendamento->gmuscular_id = $request->gmuscular4;
+             $agendamento->save();
+
     }
 
     /**

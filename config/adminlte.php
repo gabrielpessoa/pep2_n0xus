@@ -118,7 +118,7 @@ return [
             'text'        => 'Menu',
             'url'         => 'home/create',
             'icon'        => 'home',
-          
+
         ],
         'CADASTROS',
         [

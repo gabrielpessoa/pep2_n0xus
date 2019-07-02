@@ -12,7 +12,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
-       
+
+
         User::create([
             'name' => 'Admin',
             'email' => 'Admin@Admin.com',
@@ -21,23 +22,26 @@ class DatabaseSeeder extends Seeder
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'remember_token' => 1
         ]);
-	
+
 	 DB::table('bloco_exercicios')->insert([
             'nome' => 'Alongamento',
-       
+
         ]);
 	 DB::table('bloco_exercicios')->insert([
             'nome' => 'Tronco',
-       
+
         ]);
 	 DB::table('bloco_exercicios')->insert([
             'nome' => 'MMII',
-       
+
         ]);
 	 DB::table('bloco_exercicios')->insert([
             'nome' => 'MMSS',
-       
+
         ]);
+
+     $this->call(GrupoMuscularSeeder::class);
+     $this->call(EquipamentoSeeder::class);
     }
-    
+
 }
