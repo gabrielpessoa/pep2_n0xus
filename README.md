@@ -8,6 +8,7 @@ Siga as instruções abaixo para realizar a instalação e execução do projeto
 - [Pré-Requisitos](#pré-requisitos)
 - [Instalação](#instalação)
 - [Ferramentas](#ferramentas)
+- [Equipe](#equipe)
 - [Licença](#licença)
 ## Pré-Requisitos
 
@@ -46,6 +47,13 @@ $ php artisan serve
 - [Laravel](https://laravel.com) - PHP Framework
 - [Bootstrap](https://getbootstrap.com/) - CSS && HTML Framework
 - [AdminLTE](https://adminlte.io/) - Bootstrap Admin Dashboard
+
+## Equipe
+- [Arthur Vinicius] (https://github.com/arthurviniciuse)
+- [Adriene Barbosa] (https://github.com/adrienesantana01)
+- [Luiz Carlos] (https://github.com/luizcsrj)
+- [Guilherme Gomes] (https://github.com/guilhermegomes1)
+- [Guilherme Evaristo] (https://github.com/GuilhermeEvaristo)
 
 ## Licença
 
