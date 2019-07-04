@@ -11,16 +11,17 @@
 <div class="container">
   <form method="post" class="form-group" action="{{route('home.store')}}">
     @csrf
+    @php($a=1)
     @for($i=0; $i<4; $i++)
       <div class="form-row">
         <div class="form-group col-md-4">
           <label for="exampleFormControlSelect1">Blocos de Exercícios</label>
-          <input type="text" class="form-control" value= "{{$blocos[$i]->nome}}" disabled="">
-          <input type="hidden" name="bloco{{$i}}" value= "{{$i}}" >
+          <input type="text" class="form-control" value= "{{$blocos[$i]->nome}}" disabled>
+          <input type="hidden" name="bloco{{$a}}" value= "{{$a}}" >
         </div>
         <div class="form-group col-md-4">
           <label for="exampleFormControlSelect1">Grupo muscular</label>
-          <select class="form-control" id="exampleFormControlSelect1" name="gmuscular{{$i}}">
+          <select class="form-control" id="exampleFormControlSelect1" name="gmuscular{{$a}}">
             @foreach ($gmusculares as $gmuscular)
               <option value="{{$gmuscular-> id}}">{{$gmuscular->nome}}</option>
             @endforeach
@@ -28,13 +29,14 @@
         </div>
         <div class="form-group col-md-4">
           <label for="exampleFormControlSelect1">Equipamento</label>
-          <select class="form-control" id="exampleFormControlSelect1" name="equipamento{{$i}}">
+          <select class="form-control" id="exampleFormControlSelect1" name="equipamento{{$a}}">
             @foreach ($equipamentos as $equipamento)
               <option value="{{$equipamento-> id}}">{{$equipamento->equipamento}}</option>
             @endforeach
           </select>
         </div>
       </div>
+      @php($a++)
     @endfor
     <div class="form-row">
       <label for="exampleFormControlSelect1" style="margin-left: 15px;">Data de Agendamento</label>

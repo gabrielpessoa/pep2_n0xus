@@ -42,44 +42,28 @@ class AgendamentoController extends Controller
      */
     public function store(Request $request)
     {
-        $semana = new Semana;
-        $semana->n_semana = $request->data;
-        $semana->save();
 
-        $semanas = Semana::all();
-        foreach ($semanas as $key => $value) {
-            if($value->n_semana == $request->data){
-                $data = $value->id;
+        // dd($request->all());
+        Semana::create(['n_semana'=>$request->data]);
+        $semana = Semana::all();
+        foreach($semana as $item){
+            if($item->n_semana == $request->data){
+                $data = $item->id;
+                break;
             }
         }
-
-             $agendamento = new Agendamento;
-             $agendamento->semana_id = $data;
-             $agendamento->bloco_exercicio_id = $request->bloco1;
-             $agendamento->equipamento_id = $request->equipamento1;
-             $agendamento->gmuscular_id = $request->gmuscular1;
-             $agendamento->save();
-
-             $agendamento = new Agendamento;
-             $agendamento->semana_id = $data;
-             $agendamento->bloco_exercicio_id = $request->bloco2;
-             $agendamento->equipamento_id = $request->equipamento2;
-             $agendamento->gmuscular_id = $request->gmuscular2;
-             $agendamento->save();
-
-             $agendamento = new Agendamento;
-             $agendamento->semana_id = $data;
-             $agendamento->bloco_exercicio_id = $request->bloco3;
-             $agendamento->equipamento_id = $request->equipamento3;
-             $agendamento->gmuscular_id = $request->gmuscular3;
-             $agendamento->save();
-
-             $agendamento = new Agendamento;
-             $agendamento->semana_id = $data;
-             $agendamento->bloco_exercicio_id = $request->bloco4;
-             $agendamento->equipamento_id = $request->equipamento4;
-             $agendamento->gmuscular_id = $request->gmuscular4;
-             $agendamento->save();
+        $inputs = ['1','2','3','4'];
+        for($i = 0; $i < sizeof($inputs);$i++){
+            $bloco = 'bloco' . $inputs[$i];
+            $gmuscular = 'gmuscular' . $inputs[$i];
+            $equipamento = 'equipamento' . $inputs[$i];
+            Agendamento::create([
+                'semana_id'=>$data,
+                'bloco_exercicio_id'=>intval($request->$bloco),
+                'gmuscular_id'=>$request->$gmuscular,
+                'equipamento_id'=>$request->$equipamento,
+            ]);
+        }
 
     }
 
